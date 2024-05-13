@@ -23,7 +23,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1450px;
+  width: 1200px;
 }
 
 .logo {
@@ -347,7 +347,7 @@ footer p {
   margin-top: 50px;
 }
 
-h4 {
+.footer-info {
   color: white;
   font-size: 32px;
 
