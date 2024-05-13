@@ -1,62 +1,63 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    /* reset the body's margins */
-    margin: 0;
-    font-family: "DM Sans", sans-serif;
-  }
-  
-  .flex {
-    padding: 2em 0;
-    margin: 0;
-  
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-  }
+  box-sizing: border-box;
+}
 
-  p {
-    font-size: 1.1em;
-  }
+body {
+  /* reset the body's margins */
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
 
-  h4 {
-    font-size: 1.3em;
-  }
+.flex {
+  padding: 2em 0;
+  margin: 0;
 
-  h6 {
-    margin: 60px 0;
-    font-size: 1.2em;
-    padding-left: 15px;
-  }
-  
-  /* nav */
-  
-  .container {
-    margin: 0 auto;
-    width: 1200px;
-  }
-  
-  .logo {
-    margin-right: auto;
-  }
-  
-  .navigation-link {
-    padding-left: 4em;
-  
-    font-size: 20px;
-    font-weight: bold;  
-    text-decoration: none;
-  
-    color: black;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h6 {
+  margin: 60px 0;
+  font-size: 1.2em;
+  padding-left: 15px;
+}
+
+/* nav */
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.navigation-link {
+  padding-left: 4em;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+
+  color: black;
+}
 
 /* hero*/
 
 .breadcrumbs {
   padding-left: 15px;
+  font-weight:400;
 }
 
 .grid-hero {
@@ -132,7 +133,7 @@ h1 {
 }
 
 .text-bottom {
-  align-self:end;
+  align-self: end;
 }
 
 /* paragraph 2 */
@@ -166,7 +167,7 @@ h1 {
 }
 
 .img-3 {
-  grid-column:1/2;
+  grid-column: 1/2;
   grid-row: 3/4;
 
   width: 100%;
@@ -188,36 +189,37 @@ h1 {
 }
 
 .img-4 {
-  grid-column:2/3;
+  grid-column: 2/3;
   grid-row: 4/5;
 
   width: 100%;
-  height: 100%;
+  height: 600px;
 
   border-radius: 50px;
 
   background-image: url(img/article/article-yellow-three.png);
-  background-size:cover;
+  background-size: cover;
 }
 
 /* suggestions */
 
 .suggestions {
-  display:grid;
+  margin-top: 6em;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2.5fr;
 }
 
 .sugg-text {
-  grid-row:1/2;
-  grid-column:1/2;
-  justify-content:center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  text-align: center;
 }
 
 .sugg-images {
   grid-row: 2/3;
-  grid-column:1/2;
-  
+  grid-column: 1/2;
+
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
@@ -234,7 +236,8 @@ h1 {
   border-radius: 50px;
 
   background-image: url(img/article-due.png);
-  background-size:cover;
+  background-size: cover;
+  background-position: center;
 
   grid-row: 1/2;
   grid-column: 1/2;
@@ -247,7 +250,8 @@ h1 {
   border-radius: 50px;
 
   background-image: url(img/article-tre.png);
-  background-size:cover;
+  background-size: cover;
+  background-position: center;
 
   grid-row: 1/2;
   grid-column: 2/3;
@@ -261,9 +265,99 @@ h1 {
   border-radius: 50px;
 
   background-image: url(img/article-quattro.png);
-  background-size:cover;
+  background-size: cover;
+  background-position: center;
 
   grid-row: 1/2;
   grid-column: 3/4;
 }
 
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: black;
+  padding: 2em;
+
+  margin-top: 130px;
+
+  border-radius: 50px 50px 0 0;
+}
+
+footer p {
+  font-size: 16px;
+  color: white;
+}
+
+.grid-container-6 {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: .2fr 1fr;
+  gap: 2em
+}
+
+.loghi {
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  display: flex;
+
+  margin-top: 50px;
+
+  flex-direction: column;
+  gap: 20px;
+}
+
+.svg {
+  width: 248px;
+  height: 66px;
+}
+
+.contatti {
+  grid-row: 2/3;
+  grid-column: 2/3;
+
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+
+.newsletter {
+  grid-row: 2/3;
+  grid-column: 3/4;
+
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 50px;
+
+  align-items: flex-start;
+  color: white;
+}
+
+.footer-info {
+  color: white;
+  font-size: 32px;
+
+  margin: 0;
+}
+
+.cta-due {
+  background-color: #FF7733;
+
+  color: white;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding: 20px;
+
+  border-radius: 50px;
+
+  display: inline-block;
+}
