@@ -363,7 +363,7 @@ footer p {
   align-items: flex-start
 }
 
-h4 {
+.footer-info {
   color: white;
   font-size: 32px;
 
