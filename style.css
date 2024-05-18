@@ -185,6 +185,11 @@ h2 {
   background-color: black;
 }
 
+.cta:hover {
+  color: black;
+  background-color: white;
+}
+
 /* terzo container grid */
 
 .grid-container-3 {
