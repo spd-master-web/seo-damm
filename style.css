@@ -423,4 +423,36 @@ video {
 .faq {
   display: flex;
   align-items: center;
+  gap: 2em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.secondo-bento-text {
+  padding: 2em;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr;
+  grid-row-gap: 3em;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  grid-column: 1 / 2;
+}
+
+.download p {
+  margin: 0;
+}
+
+.secondo-bento-text h1 {
+  grid-column: 1 / 3;
 }

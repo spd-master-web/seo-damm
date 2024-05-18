@@ -513,33 +513,39 @@ h1 {
   font-size: 24px;
 }
 
-.uno {
-  background-image: url(img/article-uno.png);
-
+.position-1 {
   grid-row: 1/2;
-  grid-column: 3/4;
-
+  grid-column: 1/2;
 }
 
-.tre {
-  background-image: url(img/article-tre.png);
-
-  grid-row: 1/2;
-  grid-column: 3/4;
-}
-
-.quattro {
-  background-image: url(img/article-quattro.png);
-
+.position-2 {
   grid-row: 1/2;
   grid-column: 2/3;
 }
 
+.position-3 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.uno {
+  background-image: url(img/article-uno.png);
+}
+
+.due {
+  background-image: url(img/article-due.png);
+}
+
+.tre {
+  background-image: url(img/article-tre.png);
+}
+
+.quattro {
+  background-image: url(img/article-quattro.png);
+}
+
 .cinque {
   background-image: url(img/article-cinque.png);
-
-  grid-row: 1/2;
-  grid-column: 1/2;
 }
 
 .article {
