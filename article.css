@@ -53,6 +53,19 @@ h6 {
   color: black;
 }
 
+.navigation-link:hover {
+  color: #FF8E56;
+}
+
+.selected {
+  padding-bottom:.3em;
+  margin-left: 4em;
+  padding-left: 0;
+
+  border-bottom: 1px solid #FF8E56;
+  color:#FF8E56;
+}
+
 /* hero*/
 
 .breadcrumbs {
