@@ -6,7 +6,16 @@ body {
   /* reset the body's margins */
   margin: 0;
   font-family: "DM Sans", sans-serif;
+}
 
+/* variables */
+
+:root {
+  --main-color: #FF8E56;
+  --lightblue-color: #3AA4B1;
+  --green-color: #3AB162;
+  --pink-color: #FF3F8D;
+  --black-color: #1D1D1D;
 }
 
 .flex {
@@ -39,7 +48,7 @@ body {
 
   text-decoration: none;
 
-  color: black;
+  color: var(--black-color);
 }
 
 /* qua inzia la parte main della home */
@@ -51,11 +60,11 @@ body {
   grid-template-rows: 1fr;
   gap: 1em;
 
-  margin-top: 130px;
+  margin-top: 2em;
 }
 
 .primo-bento {
-  background-color: #3AA4B1;
+  background-color: var(--lightblue-color);
   width: 100%;
   height: 100%;
 
@@ -91,7 +100,7 @@ p {
 }
 
 .secondo-bento {
-  background-color: #FF8E56;
+  background-color: var(--main-color);
   width: 100%;
   height: 100%;
 
@@ -105,7 +114,7 @@ p {
   display: flex;
   justify-content: space-around;
 
-  background-color: #FF8E56;
+  background-color: var(--main-color);
   width: 100%;
   height: 100%;
 
@@ -126,7 +135,7 @@ p {
 
   margin-top: 2em;
 
-  background-color: #3AB162;
+  background-color: var(--green-color);
   width: 100%;
   height: 100%;
 
@@ -182,12 +191,20 @@ h2 {
   border-radius: 50px;
 
   color: white;
-  background-color: black;
+  background-color: var(--black-color);
+}
+
+.cta a {
+  font-weight: bold;
 }
 
 .cta:hover {
-  color: black;
+  color: var(--main-color);
   background-color: white;
+}
+
+.cta a:hover {
+  font-weight: bold;
 }
 
 /* terzo container grid */
@@ -247,7 +264,6 @@ h3 {
 .uno {
   background-image: url(img/article-uno.png);
 
-
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -302,7 +318,7 @@ h3 {
   grid-template-rows: 1fr;
   gap: 2em;
 
-  background-color: #FF3F8D;
+  background-color: var(--pink-color);
   width: 100%;
   height: 100%;
 
@@ -331,7 +347,7 @@ h3 {
 
 footer {
   width: 100%;
-  background-color: black;
+  background-color: var(--black-color);
   padding: 2em;
 
   margin-top: 130px;
@@ -374,7 +390,6 @@ footer p {
   margin-top: 50px;
 }
 
-
 .newsletter {
   grid-row: 2/3;
   grid-column: 3/4;
@@ -396,7 +411,7 @@ footer p {
 }
 
 .cta-due {
-  background-color: #FF7733;
+  background-color: var(--main-color);
 
   color: white;
 
@@ -410,10 +425,23 @@ footer p {
   display: inline-block;
 }
 
+.cta-due:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.cta-due a {
+  font-weight: bold;
+}
+
+.cta-due a:hover {
+  font-weight: bold;
+}
+
 /* -------------- LANDING PAGE --------------  */
 
 .banner {
-  margin-top: 130px;
+  margin-top: 2em;
   padding: 2em;
 
   display: grid;
@@ -421,7 +449,7 @@ footer p {
   grid-template-rows: 1fr;
   gap: 1em;
 
-  background-color: #3AA4B1;
+  background-color: var(--lightblue-color);
   width: 100%;
   height: 100%;
 
@@ -476,3 +504,25 @@ video {
 .secondo-bento-text h1 {
   grid-column: 1 / 3;
 }
+
+.green {
+  background-color: var(--green-color);
+}
+
+.pink {
+  background-color: var(--pink-color);
+}
+
+/* -------------- ERROR PAGE --------------  */
+
+.error {
+  color: var(--black-color);
+}
+
+.footer-error {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
