@@ -110,6 +110,7 @@ h6 {
   .grid-hero {
     grid-template-columns: 1fr;
   }
+}
 
   .primo-bento {
     width: 100%;
@@ -259,6 +260,7 @@ h6 {
     .author {
       margin-top:20px;
     }
+  }
 
   /* text */
 
@@ -593,6 +595,7 @@ h6 {
     .suggestions {
       grid-template-rows: .3fr 2.5fr;
   }
+}
 
   .sugg-text {
     grid-row: 1/2;
